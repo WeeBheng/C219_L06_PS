@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>L06 Assignment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* Navbar styles */
+            .navbar {
+                background-color: black;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 20px;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .nav-links ul {
+                list-style: none;
+                display: flex;
+            }
+
+            .nav-links ul li {
+                margin-right: 20px;
+            }
+
+            .nav-links ul li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .search-bar input {
+                padding: 8px;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .icons img {
+                margin-left: 15px;
+                height: 25px;
+                width: 25px;
+            }
+            
+            .container-fluid{
+                background-color: black;
+                color: white;
+                
+            }
+            .d-flex{
+                flex-direction:column;
+                margin-top:10px;
+            }
+            img-fluid{
+                max-width: 20%;
+            }
+            
+            .col-3 {
+                     color:black;
+                 }
+            
+            @media only screen and (max-width: 800px) {
+             
+                 .img-fluid{
+                     margin:auto;
+                 }
+                 
+                 h2{
+                     text-align:center;
+                 }
+                 
+                 p{
+                     text-align:center;
+                 }
+                 
+                 button{
+                     margin:auto;
+                 }
+                 
+                 .logo{
+                     margin:auto;
+                 }
+                 
+                 .nav-links{
+                     margin:auto;
+                 }
+                 
+                 .col-4 {
+                     flex: 100%;
+                     max-width: 100%;
+                 }
+                 
+                 .col-3 {
+                     flex: 100%;
+                     max-width: 100%;
+                     color:black;
+                 }
+             }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <span><b>SOI Learning Portal</b></span>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="icons">
+                <img src="Images/Notification.png" alt="Notifications">
+                <img src="Images/Profile Icon.png" alt="Profile">
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+
+            <div class="container">
+
+                <!-- Add a row here that will contain 2 columns -->
+                <div class="row">
+
+                    <!-- Add a column here for text -->
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <!-- Add a heading element here -->
+                            <h2>Welcome to SOI Learning Portal</h2>
+
+                            <!-- Add a paragraph of text here -->
+                            <p class="lead">Expertly crafted courses that best fit your learning needs and preferences.</p>
+
+                            <!-- Add a button here -->
+                            <div class="buttons">
+                            <button type="submit" style="border-radius:10px; height:40px; width: 150px; background-color:white; color:black;">Browse Courses</button>
+                            <button type="submit" style="border-radius:10px; height:40px; width: 150px; background-color:white; color:black;">Be an Instructor</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add a column here for the image -->
+                    <div class="col-md-6">
+                        <!-- Add your image here -->
+                        <img class="img-fluid" src="Images/HeroImage.png" alt="HeroImage" style="border : none ;" height="250" width="300"/>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+       
+        <div class="row">
+            
+            <div class="col-4">
+                <div style="display:inline-block;vertical-align:top;">
+                    <img src="Images/BookIcon.png" alt="Book" height="75" width="75"/>
+                </div>
+                <div style="display:inline-block;">
+                    <h3 style="font-weight: bold">158 Courses Online</h3>
+                    <p>Enjoy a variety of fresh topics</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div style="display:inline-block;vertical-align:top;">
+                    <img src="Images/PersonIcon.png" alt="Person" height="75" width="75"/>
+                </div>
+                <div style="display:inline-block;">
+                    <h3 style="font-weight: bold">Expert Instructions</h3>
+                    <p>Find the right instructor for you</p>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div style="display:inline-block;vertical-align:top;">
+                    <img src="Images/TimeIcon.png" alt="Time" height="75" width="75"/>
+                </div>
+                <div style="display:inline-block;">
+                    <h3 style="font-weight: bold">Lifetime Access</h3>
+                    <p>Learn on your schedule</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+
+            <div class="container">
+
+                <br/>
+                <h3><b>Featured Courses</b></h3>
+                <!-- Add a row here that will contain 2 columns -->
+                <div class="row">
+
+                    <div class="col-3">
+                        <div class="card w-80">
+                            <img src="Images/HTMLCSS.jpg" class="card-img-top" alt="Plants">
+                            <div class="card-body">
+                                <h5 class="card-title">Introduction to HTML and CSS</h5>
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <img src="Images/TimeIcon.png" alt="Time" height="20" width="20"/>
+                                </div>
+                                <div style="display:inline-block;">
+                                    <p class="card-text">2h 30m</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <img src="Images/PersonIcon.png" alt="Person" height="20" width="20"/>
+                                </div>
+                                <div style="display:inline-block;">
+                                    <p class="card-text">Hannah Lim</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card w-80">
+                            <img src="Images/UIUX.jpg" class="card-img-top" alt="Plants">
+                            <div class="card-body">
+                                <h5 class="card-title">User Experience and Interface Design</h5>
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <img src="Images/TimeIcon.png" alt="Time" height="20" width="20"/>
+                                </div>
+                                <div style="display:inline-block;">
+                                    <p class="card-text">2h 45m</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <img src="Images/PersonIcon.png" alt="Person" height="20" width="20"/>
+                                </div>
+                                <div style="display:inline-block;">
+                                    <p class="card-text">Julia Lee</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card w-80">
+                            <img src="Images/MobileDev.png" class="card-img-top" alt="Plants">
+                            <div class="card-body">
+                                <h5 class="card-title">IOS App Development using Xcode and Swift</h5>
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <img src="Images/TimeIcon.png" alt="Time" height="20" width="20"/>
+                                </div>
+                                <div style="display:inline-block;">
+                                    <p class="card-text">4h 30m</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <img src="Images/PersonIcon.png" alt="Person" height="20" width="20"/>
+                                </div>
+                                <div style="display:inline-block;">
+                                    <p class="card-text">Ryan Low</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card w-80">
+                            <img src="Images/Java.jpg" class="card-img-top" alt="Plants">
+                            <div class="card-body">
+                                <h5 class="card-title">Front-End Javascript Frameworks</h5>
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <img src="Images/TimeIcon.png" alt="Time" height="20" width="20"/>
+                                </div>
+                                <div style="display:inline-block;">
+                                    <p class="card-text">3h 45m</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="display:inline-block;vertical-align:top;">
+                                    <img src="Images/PersonIcon.png" alt="Person" height="20" width="20"/>
+                                </div>
+                                <div style="display:inline-block;">
+                                    <p class="card-text">Arhar Kamar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+                
+                <br></br>
+                
+                <p>@2021 SOI Learning Portal All Rights Reserved</p>
+                <ul>
+                    <li><a href="#">Privacy</a></li> <li><a href="#">Terms</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+
+            </div> 
+        </div>
+        
+    </body>
+</html>
